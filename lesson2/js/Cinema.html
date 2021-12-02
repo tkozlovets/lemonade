@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+</head>
+<body>
+    <h1>Выбор места в кинотеатре</h1>
+    <script>
+        const MAX_PLACES = 50
+let firstPlace,
+    secondPlace
+
+    // максимальное к-во мест в зале 50
+// каждое 3е место недоступно из-за ковида =(
+// ввести номер места (через prompt) и записать в переменные firstPlace(введенное место) и в secondPlace
+// следующее ближайшее место в интервале от 20 до 30
+// если места выходят за рамки интервала / вывести алерт с предупреждением
+// если место зарезервировано(тоесть каждое третее) выводим алерт с текстом 'место забронированно'
+// решить задание 2-мя способами: if, switch...case
+
+
+firstPlace = +prompt('Введите номер места c 1го по 50е')
+secondPlace = firstPlace + 1
+
+if(firstPlace < 20 || firstPlace > 29){
+    alert('Доступны места только с 20го по 30е')
+   }  
+else if ((firstPlace%3===0)||(secondPlace%3)===0) {
+    alert('К сожалению, место занято!')
+} 
+else if (isNaN(firstPlace)){
+    alert('Введите цифру')
+}
+ else {
+     alert('Места забронированны за вами!')
+ }
+</script>
+</body>
+</html>
