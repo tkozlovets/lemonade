@@ -149,4 +149,81 @@
 // }
 // console.log (countArr())
 
+// task 11
+// Пользователь вводит числа. 
+// Если число больше 10, то функция возвращает квадрат числа, если меньше 7 – пишет, что число меньше 7.
+// Если 7, 8, 9 – то возвращает соответственно 7, 8 или 9. Реализуйте решение с несколькими return.
 
+
+// function output(x) {
+//     if (x > 10)
+//     { return(x*x) 
+//     }
+//     else if(x < 7)
+//     {
+//       return('число меньше 7')
+//     }
+//     else if(x >= 7 || x <= 10)
+// {
+//     return x 
+// }
+
+// }
+// console.log(output(5))
+
+// task 12
+// Дана строка. Сделайте заглавным первый символ каждого слова этой строки. Для этого сделайте вспомогательную 
+// функцию ucfirst, которая будет получать строку, делать первый символ этой строки заглавным и возвращать обратно 
+// строку с заглавной первой буквой.
+
+// let str 
+
+// function ucFirst(str) {
+//     if (!str) 
+//     {return str;
+//     }
+//   {return str[0].toUpperCase() + str.slice(1, 6) + ' ' + str[7].toUpperCase() + str.slice(8, 10) + ' ' + 
+//   str[11].toUpperCase() + str.slice(12) 
+// }
+// }
+// console.log(ucFirst("привет как дела"))
+
+// task 13
+// Дана строка вида 'var_text_hello'. Сделайте из него текст 'varTextHello'.
+
+let str = 'var_text_hello'
+
+// task 14
+// Сделайте функцию inArray, которая определяет, есть в массиве элемент с заданным текстом или нет. 
+// Функция первым параметром должна принимать текст элемента, а вторым - массив, в котором делается поиск. 
+// Функция должна возвращать true или false. Показать решение.
+
+// let array = ['привет', 'как', 'дела']
+// let text = 'привет'
+// let result = array.filter(function(array)
+// {
+//     return array[i] == text 
+// });
+// console.log(result)
+
+
+
+
+
+// task 15
+// Дана строка, например, '123456'. Сделайте из нее '214365'.
+
+// let str = '123456'
+
+// let arr = str.split('')
+
+// let result = arr.map((item, index, array) => {
+// if (index%2 !== 0) {
+//     return item = array[index - 1];
+// } 
+// return item = array[index + 1];
+// });
+
+// let str1 = result.join('')
+
+// console.log(str1)
