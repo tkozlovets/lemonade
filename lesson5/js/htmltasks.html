@@ -10,14 +10,14 @@
 
 <script>
 
-function numberOutput(N) {
-    if (N < 1) {
-      return N;
-  } else {
-      return numberOutput(N - 1) + " " + N
-  }
-}
-alert(numberOutput(3)); 
+let a = +prompt('введите длину массива')
+
+let arr = []
+a = arr.length
+
+for(i=0; i<=a; i++)
+{ arr.push(arr[i] + 'x') };
+alert(arr) 
 
 
   
