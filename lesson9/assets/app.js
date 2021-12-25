@@ -31,10 +31,10 @@ function handleEvent(e) {
     }
 }
 
-//homework
+
 function upUserInList(elem) {
-    //homework
     let prevElem = elem.previousSibling
+    prevElem.before(elem)
     console.log(prevElem)
 }
 
